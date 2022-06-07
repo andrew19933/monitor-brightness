@@ -14,13 +14,13 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 ; decreases monitor brightness
 ; CRTL + ALT + [
 ^![::
-Run, "C:\Users\Andrew Ballin\Programming Projects\monitor brightness\decMoniBrightness.exe",, Hide
+Run, "%A_ScriptDir%\decMoniBrightness.exe",, Hide
 return
 
 ; increases monitor brightness
 ; CRTL + ALT + ]
 ^!]::
-Run, "C:\Users\Andrew Ballin\Programming Projects\monitor brightness\incMoniBrightness.exe",, Hide
+Run, "%A_ScriptDir%\incMoniBrightness.exe",, Hide
 return
 
 
